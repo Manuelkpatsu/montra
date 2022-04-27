@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import 'theme/custom_color.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +16,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: CustomColor.light100Color,
+        fontFamily: 'Inter',
+        canvasColor: Colors.transparent,
+        primarySwatch: CustomColor.primarySwatchColor,
+        appBarTheme: const AppBarTheme(
+          elevation: 0,
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
+        ),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
