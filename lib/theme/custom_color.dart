@@ -21,6 +21,8 @@ class CustomColor {
   static const Color dark50Color = Color(0XFF464A4D);
   static const Color dark75Color = Color(0XFF161719);
   static const Color dark100Color = Color(0XFF0D0E0F);
+  static const Color blackColor = Color(0XFF212325);
+  static const Color lightColor = Color(0XFF91919F);
   static const Color light20Color = Color(0XFFE3E5E5);
   static const Color light40Color = Color(0XFFF2F4F5);
   static const Color light60Color = Color(0XFFF7F9FA);
