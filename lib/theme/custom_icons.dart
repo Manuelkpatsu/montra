@@ -23,9 +23,9 @@ class CustomIcons {
 
   static const IconData add =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down =
+  static const IconData arrowDown =
       IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_left =
+  static const IconData arrowLeft =
       IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData attachment =
       IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -33,9 +33,9 @@ class CustomIcons {
       IconData(0xe804, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData car =
       IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_left =
+  static const IconData chevronLeft =
       IconData(0xe806, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_right =
+  static const IconData chevronRight =
       IconData(0xe807, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData close =
       IconData(0xe808, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -53,19 +53,19 @@ class CustomIcons {
       IconData(0xe80e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData income =
       IconData(0xe80f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData line_chart =
+  static const IconData lineChart =
       IconData(0xe810, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData logout =
       IconData(0xe811, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData money_exchange =
+  static const IconData moneyExchange =
       IconData(0xe812, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData more_horizontal =
+  static const IconData moreHorizontal =
       IconData(0xe813, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData notification =
       IconData(0xe814, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pie_chart =
+  static const IconData pieChart =
       IconData(0xe815, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData recurring_bill =
+  static const IconData recurringBill =
       IconData(0xe816, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData restaurant =
       IconData(0xe817, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -75,9 +75,9 @@ class CustomIcons {
       IconData(0xe819, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData settings =
       IconData(0xe81a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shopping_bag =
+  static const IconData shoppingBag =
       IconData(0xe81b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sort_highest_lowest =
+  static const IconData sortHighestLowest =
       IconData(0xe81c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData sort =
       IconData(0xe81d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
