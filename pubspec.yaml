@@ -30,3 +30,6 @@ flutter:
         - asset: fonts/Inter-Medium.ttf
         - asset: fonts/Inter-Bold.ttf
           weight: 700
+    - family: CustomIcons
+      fonts:
+        - asset: fonts/CustomIcons.ttf
