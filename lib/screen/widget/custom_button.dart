@@ -3,7 +3,7 @@ import 'package:montra/theme/custom_color.dart';
 import 'package:montra/theme/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  final String action;
+  final Widget widget;
   final VoidCallback? onPressed;
   final double height;
   final double width;
@@ -12,7 +12,7 @@ class CustomButton extends StatelessWidget {
 
   const CustomButton({
     Key? key,
-    required this.action,
+    required this.widget,
     required this.onPressed,
     this.height = 56,
     this.width = double.infinity,
@@ -34,7 +34,7 @@ class CustomButton extends StatelessWidget {
         textStyle: title3TextStyle,
         minimumSize: Size(width, height),
       ),
-      child: Text(action),
+      child: widget,
     );
   }
 }

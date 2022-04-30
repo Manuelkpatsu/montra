@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:montra/model/page_view_model.dart';
+import 'package:montra/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:montra/screen/widget/custom_button.dart';
 import 'package:montra/theme/custom_color.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -88,13 +89,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               const SizedBox(height: 30),
               CustomButton(
-                onPressed: () {},
-                action: 'Sign Up',
+                onPressed: () =>
+                    Navigator.of(context).pushNamed(SignUpScreen.routeName),
+                widget: const Text('Sign Up'),
               ),
               const SizedBox(height: 16),
               CustomButton(
                 onPressed: () {},
-                action: 'Login',
+                widget: const Text('Login'),
                 backgroundColor: CustomColor.violet20Color,
                 textColor: CustomColor.violet100Color,
               ),

@@ -52,3 +52,9 @@ const TextStyle tinyTextStyle = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w500,
 );
+
+const TextStyle placeholderTextStyle = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.w400,
+  height: 1.13,
+);

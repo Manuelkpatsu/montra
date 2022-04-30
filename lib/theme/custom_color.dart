@@ -25,7 +25,7 @@ class CustomColor {
   static const Color lightColor = Color(0XFF91919F);
   static const Color light20Color = Color(0XFFE3E5E5);
   static const Color light40Color = Color(0XFFF2F4F5);
-  static const Color light60Color = Color(0XFFF7F9FA);
+  static const Color light60Color = Color(0XFFF1F1FA);
   static const Color light80Color = Color(0XFFFBFBFB);
   static const Color light100Color = Color(0XFFFFFFFF);
   static const Color violet20Color = Color(0XFFEEE5FF);
