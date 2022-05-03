@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/verification/verification_screen.dart';
 import 'package:montra/screen/widget/password_input_field.dart';
 import 'package:montra/screen/widget/text_input_field.dart';
 import 'package:montra/theme/custom_color.dart';
@@ -102,6 +103,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const SizedBox(height: 17),
               SignUpButton(onPressed: () {
                 if (_formKey.currentState!.validate()) {
+                  Navigator.of(context).pushNamed(VerificationScreen.routeName);
                   _formKey.currentState!.reset();
                 }
               }),

@@ -43,7 +43,7 @@ class Validator {
       return 'Code is required.';
     }
 
-    if (code.length != 4) {
+    if (code.length != 6) {
       return "Code is invalid.";
     }
 
