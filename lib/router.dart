@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:montra/screen/splash/splash_screen.dart';
 
+import 'screen/auth/login/login_screen.dart';
 import 'screen/auth/onboarding/onboarding_screen.dart';
 import 'screen/auth/sign_up/sign_up_screen.dart';
 import 'screen/auth/verification/verification_screen.dart';
@@ -16,6 +17,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
       case VerificationScreen.routeName:
         return MaterialPageRoute(builder: (_) => const VerificationScreen());
+      case LoginScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
