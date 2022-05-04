@@ -49,4 +49,16 @@ class Validator {
 
     return null;
   };
+
+  static FormFieldValidator<String> pin = (pin) {
+    if (pin == null || pin.isEmpty) {
+      return 'Pin is required.';
+    }
+
+    if (pin.length != 4) {
+      return "Pin is invalid.";
+    }
+
+    return null;
+  };
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:montra/screen/auth/forgot_password/forgot_password_screen.dart';
+import 'package:montra/screen/auth/set_up_pin/set_up_pin_screen.dart';
 import 'package:montra/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:montra/screen/widget/password_input_field.dart';
 import 'package:montra/screen/widget/text_input_field.dart';
@@ -65,7 +66,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 toggle: () => setState(() => _showPassword = !_showPassword),
               ),
               const SizedBox(height: 40),
-              LoginButton(onPressed: () {}),
+              LoginButton(
+                onPressed: () => Navigator.of(context).pushNamed(
+                  SetUpPinScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 30),
               ForgotPassword(
                 onPressed: () => Navigator.of(context).pushNamed(
