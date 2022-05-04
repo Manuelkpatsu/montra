@@ -5,6 +5,7 @@ import 'screen/auth/forgot_password/forgot_password_screen.dart';
 import 'screen/auth/login/login_screen.dart';
 import 'screen/auth/onboarding/onboarding_screen.dart';
 import 'screen/auth/password_email_sent/password_email_sent_screen.dart';
+import 'screen/auth/reset_password/reset_password_screen.dart';
 import 'screen/auth/sign_up/sign_up_screen.dart';
 import 'screen/auth/verification/verification_screen.dart';
 
@@ -27,6 +28,8 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const PasswordEmailSentScreen(),
         );
+      case ResetPasswordScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/login/login_screen.dart';
+import 'package:montra/screen/auth/reset_password/reset_password_screen.dart';
 
 import 'widget/back_to_login_button.dart';
 import 'widget/email_on_the_way_text.dart';
@@ -28,9 +30,17 @@ class PasswordEmailSentScreen extends StatelessWidget {
               const SizedBox(height: 24),
               const PasswordResetInfoText(email: 'test@test.com'),
               const Spacer(),
-              ResetPasswordButton(onPressed: () {}),
+              ResetPasswordButton(
+                onPressed: () => Navigator.of(context).pushNamed(
+                  ResetPasswordScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 20),
-              BackToLoginButton(onPressed: () {}),
+              BackToLoginButton(
+                onPressed: () => Navigator.of(context).pushNamed(
+                  LoginScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 16),
             ],
           ),
