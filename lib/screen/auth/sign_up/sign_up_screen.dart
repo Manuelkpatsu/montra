@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/login/login_screen.dart';
 import 'package:montra/screen/auth/verification/verification_screen.dart';
 import 'package:montra/screen/widget/password_input_field.dart';
 import 'package:montra/screen/widget/text_input_field.dart';
@@ -112,7 +113,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const SizedBox(height: 12),
               GoggleSignUpButton(onPressed: () {}),
               const SizedBox(height: 12),
-              AlreadyHaveAccount(onTap: () {}),
+              AlreadyHaveAccount(
+                onTap: () => Navigator.of(context).pushNamed(
+                  LoginScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 10),
             ],
           ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/forgot_password/forgot_password_screen.dart';
+import 'package:montra/screen/auth/sign_up/sign_up_screen.dart';
 import 'package:montra/screen/widget/password_input_field.dart';
 import 'package:montra/screen/widget/text_input_field.dart';
 import 'package:montra/utils/validator.dart';
@@ -65,9 +67,17 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 40),
               LoginButton(onPressed: () {}),
               const SizedBox(height: 30),
-              ForgotPassword(onPressed: () {}),
+              ForgotPassword(
+                onPressed: () => Navigator.of(context).pushNamed(
+                  ForgotPasswordScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 30),
-              CreateNewAccount(onTap: () {}),
+              CreateNewAccount(
+                onTap: () => Navigator.of(context).pushNamed(
+                  SignUpScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 10),
             ],
           ),
