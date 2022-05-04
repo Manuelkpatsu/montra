@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/password_email_sent/password_email_sent_screen.dart';
 import 'package:montra/screen/widget/continue_button.dart';
 import 'package:montra/screen/widget/text_input_field.dart';
 
@@ -44,7 +45,11 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               inputType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 30),
-            ContinueButton(onPressed: () {}),
+            ContinueButton(
+              onPressed: () => Navigator.of(context).pushNamed(
+                PasswordEmailSentScreen.routeName,
+              ),
+            ),
             const SizedBox(height: 10),
           ],
         ),
