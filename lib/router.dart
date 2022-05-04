@@ -7,6 +7,7 @@ import 'screen/auth/onboarding/onboarding_screen.dart';
 import 'screen/auth/password_email_sent/password_email_sent_screen.dart';
 import 'screen/auth/reset_password/reset_password_screen.dart';
 import 'screen/auth/retype_pin/retype_pin_screen.dart';
+import 'screen/auth/set_up_account/set_up_account_screen.dart';
 import 'screen/auth/set_up_pin/set_up_pin_screen.dart';
 import 'screen/auth/sign_up/sign_up_screen.dart';
 import 'screen/auth/verification/verification_screen.dart';
@@ -36,6 +37,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SetUpPinScreen());
       case RetypePinScreen.routeName:
         return MaterialPageRoute(builder: (_) => const RetypePinScreen());
+      case SetUpAccountScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const SetUpAccountScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

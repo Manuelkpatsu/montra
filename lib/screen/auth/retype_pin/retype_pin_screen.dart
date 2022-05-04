@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/set_up_account/set_up_account_screen.dart';
 import 'package:montra/theme/custom_color.dart';
 import 'package:montra/theme/styles.dart';
 import 'package:montra/utils/validator.dart';
@@ -61,7 +62,9 @@ class _RetypePinScreenState extends State<RetypePinScreen> {
                 animationType: AnimationType.fade,
                 errorTextSpace: 20,
                 onChanged: (value) {},
-                onSubmitted: (value) {},
+                onCompleted: (value) {
+                  Navigator.of(context).pushNamed(SetUpAccountScreen.routeName);
+                },
               ),
             ],
           ),
