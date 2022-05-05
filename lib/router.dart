@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:montra/screen/splash/splash_screen.dart';
 
+import 'screen/auth/add_new_account/add_new_account_screen.dart';
 import 'screen/auth/forgot_password/forgot_password_screen.dart';
 import 'screen/auth/login/login_screen.dart';
 import 'screen/auth/onboarding/onboarding_screen.dart';
@@ -39,6 +40,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const RetypePinScreen());
       case SetUpAccountScreen.routeName:
         return MaterialPageRoute(builder: (_) => const SetUpAccountScreen());
+      case AddNewAccountScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const AddNewAccountScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

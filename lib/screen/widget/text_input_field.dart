@@ -20,6 +20,7 @@ class TextInputField extends StatelessWidget {
   final void Function(String?)? onSaved;
   final bool autofocus;
   final EdgeInsetsGeometry? contentPadding;
+  final bool readOnly;
 
   const TextInputField({
     Key? key,
@@ -38,6 +39,7 @@ class TextInputField extends StatelessWidget {
     this.onTap,
     this.onSaved,
     this.autofocus = false,
+    this.readOnly = false,
     this.contentPadding,
   }) : super(key: key);
 
@@ -46,6 +48,7 @@ class TextInputField extends StatelessWidget {
     return TextFormField(
       autofocus: autofocus,
       controller: controller,
+      readOnly: readOnly,
       cursorColor: CustomColor.violet100Color,
       onChanged: onChanged,
       style: placeholderTextStyle.copyWith(color: CustomColor.blackColor),

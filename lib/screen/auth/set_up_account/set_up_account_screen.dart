@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:montra/screen/auth/add_new_account/add_new_account_screen.dart';
 
 import 'widget/let_go_button.dart';
 import 'widget/set_up_account_info_text.dart';
@@ -23,7 +24,11 @@ class SetUpAccountScreen extends StatelessWidget {
               const SizedBox(height: 30),
               const SetUpAccountInfoText(),
               const Spacer(),
-              LetGoButton(onPressed: () {}),
+              LetGoButton(
+                onPressed: () => Navigator.of(context).pushNamed(
+                  AddNewAccountScreen.routeName,
+                ),
+              ),
             ],
           ),
         ),
