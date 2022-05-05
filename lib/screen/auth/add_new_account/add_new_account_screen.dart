@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:montra/model/bank_account.dart';
+import 'package:montra/screen/auth/sign_up_success/sign_up_success_screen.dart';
 import 'package:montra/screen/widget/account_tile.dart';
 import 'package:montra/screen/widget/continue_button.dart';
 import 'package:montra/screen/widget/dropdown_text_field.dart';
@@ -165,7 +166,11 @@ class _AddNewAccountScreenState extends State<AddNewAccountScreen> {
                         )
                       : const SizedBox.shrink(),
                   const SizedBox(height: 30),
-                  ContinueButton(onPressed: () {}),
+                  ContinueButton(
+                    onPressed: () => Navigator.of(context).pushNamed(
+                      SignUpSuccessScreen.routeName,
+                    ),
+                  ),
                   const SizedBox(height: 50),
                 ],
               ),
