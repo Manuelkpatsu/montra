@@ -56,4 +56,5 @@ class CustomColor {
   static const Color blue100Color = Color(0XFF0077FF);
   static const Color pinCodeFieldColor = Color(0XFFE0E2E9);
   static const Color keyColor = Color(0XFFFCFCFC);
+  static const Color unSelectedTabColor = Color(0XFFC6C6C6);
 }

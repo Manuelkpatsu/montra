@@ -13,6 +13,7 @@ import 'screen/auth/set_up_pin/set_up_pin_screen.dart';
 import 'screen/auth/sign_up/sign_up_screen.dart';
 import 'screen/auth/sign_up_success/sign_up_success_screen.dart';
 import 'screen/auth/verification/verification_screen.dart';
+import 'screen/main/main_screen.dart';
 
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -45,6 +46,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const AddNewAccountScreen());
       case SignUpSuccessScreen.routeName:
         return MaterialPageRoute(builder: (_) => const SignUpSuccessScreen());
+      case MainScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const MainScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
